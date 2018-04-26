@@ -2,7 +2,7 @@
 
 # runs jetpack again to install stuff after BSP is flashed
 
-#TODO: change this to detect address after BSP flashing
+
 TX2_ADDR='192.168.2.4'
 
 
@@ -22,7 +22,7 @@ echo
 
 # re-use script from step 1 w/o all the prompts
 cd ../step1/
-###./jetpack.sh 1
+./jetpack.sh 1
 
 # make some dots to space out different logical segments of the process
 for ((i=1; i<=80; i++))

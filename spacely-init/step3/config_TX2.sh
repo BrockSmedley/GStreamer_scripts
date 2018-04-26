@@ -6,13 +6,23 @@
 apt-key add /var/cuda-repo-9-0-local/7fa2af80.pub
 
 # update system
-apt-get update
-apt-get upgrade
+apt-get -y update
+#apt-get -y upgrade
 
 # conspicuous easter egg
 echo "We should use Salt(Stack) for this..."
 
-# install OpenCV if it's not already installed
+# install v4l-utils
+apt-get -y install v4l-utils
+
+# build opencv4tegra
+  # get build_OpenCV.sh
+  # run it
+  # cd ~/opencv/build/
+  # make #(sanity check)
+  # sudo make install
+  # sudo apt-get install cmake-curses-gui
+
 
 echo
 echo "All done. YAY!"
