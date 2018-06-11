@@ -8,7 +8,6 @@ cd ./step1/
 echo "Step 1 complete -- Jetpack installed."
 read -p "Press ENTER to continue to step 2."
 
-cd ../step2/
 ./spacely.sh
 
 echo "Step 2 complete -- Spacely BSP installed."
