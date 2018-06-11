@@ -38,4 +38,4 @@ sudo sh -c 'echo "/usr/local/lib" > /etc/ld.so.conf.d/opencv.conf'
 echo "OpenCV installed."
 
 echo
-echo "All done with this. Now install CUDA and TensorRT from Jetpack. YAY! (It might actually make more sense to do that stuff first."
+echo "All done with this."
