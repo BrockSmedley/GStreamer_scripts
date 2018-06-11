@@ -45,9 +45,11 @@ sshpass -p "nvidia" ssh nvidia@$TX2_ADDR 'mkdir -p /home/nvidia/scripts/'
 # copy script over scp
 echo "$st Copying configuration scripts to TX2..."
 sshpass -p "nvidia" scp config_TX2.sh nvidia@$TX2_ADDR:/home/nvidia/scripts/
-# make script executable and run it
+sshpass -p "nvidia" scp buildOpenCV.sh nvidia@$TX2_ADDR:/home/nvidia/scripts/
+# make script executable
 echo "$st Setting file permissions on TX2..."
 sshpass -p "nvidia" ssh nvidia@$TX2_ADDR 'chmod +x ~/scripts/config_TX2.sh;'
+sshpass -p "nvidia" ssh nvidia@$TX2_ADDR 'chmod +x ~/scripts/buildOpenCV.sh;'
 echo
 
 # tell user to finish process on TX2
